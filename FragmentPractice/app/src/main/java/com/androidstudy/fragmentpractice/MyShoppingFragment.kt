@@ -8,19 +8,19 @@ import android.view.View
 import android.view.ViewGroup
 import java.util.zip.Inflater
 //싱글톤 : 생성자가 여러 차례 호출되더라도 실제로 생성되는 객체는 하나이고 최초 생성 이후에 호출된 생성자는 최초의 생성자가 생성한 객체를 리턴한다.
-class MypageFragment : Fragment() {
+class MyShoppingFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-    val mypageFragmentView : View = inflater!!.inflate(R.layout.fragment_mypage,container,false)
+    val mypageFragmentView : View = inflater!!.inflate(R.layout.fragment_myshopping,container,false)
 
         return mypageFragmentView
     }
     companion object {
-        private var instance : MypageFragment? = null
+        private var instance : MyShoppingFragment? = null
 
         @Synchronized
-        fun getInstance() : MypageFragment {
+        fun getInstance() : MyShoppingFragment {
             if (instance == null) {
-                instance = MypageFragment()
+                instance = MyShoppingFragment()
             }
             return instance!!
         }
