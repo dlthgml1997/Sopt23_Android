@@ -14,7 +14,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/tab_main_icon_gray"/>
+                android:src="@drawable/selector_bottom_navi_home_icon"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -28,7 +28,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/tab_category_icon_gray"/>
+                android:src="@drawable/selector_bottom_navi_category_icon"/>
 
     </RelativeLayout>
 
@@ -42,6 +42,6 @@
                 android:layout_marginBottom="7dp"
                 android:layout_centerHorizontal="true"
                 android:layout_width="40dp" android:layout_height="40dp"
-                android:src="@drawable/tab_mypage_icon_gray"/>
+                android:src="@drawable/selector_bottom_navi_mypage_icon"/>
     </RelativeLayout>
 </LinearLayout>
