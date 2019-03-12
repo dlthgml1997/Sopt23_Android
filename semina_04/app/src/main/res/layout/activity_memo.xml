@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메모장"
+            android:textSize="24dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+    <TextView
+            android:id="@+id/btn_memo_act_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+    <EditText
+            android:id="@+id/et_memo_act_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="title"
+            android:layout_below="@+id/btn_memo_act_logout"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+    />
+    <EditText
+            android:id="@+id/et_memo_act_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="content"
+            android:layout_below="@+id/et_memo_act_title"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+    />
+    <Button
+            android:layout_below="@+id/et_memo_act_content"
+            android:id="@+id/btn_memo_act_add_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="추가하기"
+            android:textColor="#fff"/>
+    <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_below="@+id/btn_memo_act_add_memo"
+            android:id="@+id/rv_memo_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
