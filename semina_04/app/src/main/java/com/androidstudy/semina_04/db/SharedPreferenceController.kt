@@ -10,7 +10,7 @@ object SharedPreferenceController {
     private val USER_PW : String = "user_pw"
 
     //ID 집어 넣기
-    fun SetUserID(ctx: Context, input_id : String){
+    fun setUserID(ctx: Context, input_id : String){
         val preference: SharedPreferences = ctx.getSharedPreferences(USER_NAME,Context.MODE_PRIVATE) // MODE_PRIVATE : 해당 어플리케이션 외 다른 곳에서 데이터에 접근 불가
         val editor: SharedPreferences.Editor = preference.edit()
         editor.putString(USER_ID,input_id)
