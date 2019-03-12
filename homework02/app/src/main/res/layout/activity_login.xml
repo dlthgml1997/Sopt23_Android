@@ -22,12 +22,14 @@
             android:layout_marginHorizontal="16dp"
             android:hint="아이디"/>
     <EditText
+            android:inputType="textPassword"
             android:id="@+id/et_login_act_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="16dp"
             android:hint="비밀번호"/>
     <LinearLayout
+            android:layout_marginHorizontal="16dp"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
