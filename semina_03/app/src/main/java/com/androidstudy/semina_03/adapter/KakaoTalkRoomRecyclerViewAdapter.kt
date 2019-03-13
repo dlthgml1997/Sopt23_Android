@@ -1,7 +1,6 @@
 package com.androidstudy.semina_03.adapter
 
 import android.content.Context
-import android.support.constraint.R.id.parent
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.androidstudy.semina_03.R
 import com.androidstudy.semina_03.data.KakaoTalkRoomData
-import org.w3c.dom.Text
 
 class KakaoTalkRoomRecyclerViewAdapter(val ctx: Context, val dataList: ArrayList<KakaoTalkRoomData>) :
     RecyclerView.Adapter<KakaoTalkRoomRecyclerViewAdapter.Holder>() {
