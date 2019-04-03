@@ -18,7 +18,7 @@
         <Button
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="첫번째 다이얼로그"
+                android:text="두번째 다이얼로그"
                 android:id="@+id/btn_main_act_show_second_dialog"/>
         <FrameLayout
                 android:id="@+id/fl_main_act_fragment"
