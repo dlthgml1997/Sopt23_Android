@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/btn_rv_item_board_go_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+            android:id="@+id/rv_board_name"
+            android:layout_marginHorizontal="24dp"
+
+            android:layout_marginVertical="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv_rv_item_board_title"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="제목"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ImageView
+            android:background="#000000"
+            android:layout_below="@+id/rv_board_name"
+            android:id="@+id/iv_rv_item_board_image"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="360dp"
+            android:layout_width="match_parent"/>
+
+    <TextView
+            android:id="@+id/tv_rv_item_board_like_cnt"
+            android:text="53"
+            android:textSize="15dp"
+            android:layout_marginHorizontal="4dp"
+            android:layout_below="@+id/iv_rv_item_board_image"
+            android:layout_toRightOf="@+id/img_rv_item_board_like"
+            android:layout_marginLeft="4dp"
+            android:layout_marginVertical="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:layout_marginVertical="12dp"
+            android:layout_below="@+id/iv_rv_item_board_image"
+            android:id="@+id/img_rv_item_board_like"
+            android:src="@drawable/ic_heart_unselected_24dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</RelativeLayout>
