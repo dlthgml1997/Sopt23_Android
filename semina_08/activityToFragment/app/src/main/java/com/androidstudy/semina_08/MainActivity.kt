@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             val firstDialog : FirstDialogFragment = FirstDialogFragment()
             firstDialog.show(supportFragmentManager,"first dialog")
         }
+
+        btn_main_act_show_second_dialog.setOnClickListener {
+            val secondDialog : SecondDialog = SecondDialog(this)
+            secondDialog.show()
+        }
     }
 
     fun showMainActToastMessage(){
